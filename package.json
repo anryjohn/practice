@@ -1,0 +1,19 @@
+{
+  "name": "practice",
+  "version": "1.0.0",
+  "description": "\"a simple web app designed to show doctor info\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anryjohn/practice.git"
+  },
+  "author": "Andrew Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anryjohn/practice/issues"
+  },
+  "homepage": "https://github.com/anryjohn/practice#readme"
+}
