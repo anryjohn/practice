@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('#myInput').on('keyup', function() {
+    var value = $(this).val().toLowerCase();
+    $('#myTable tr').filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+
+
+
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+#panel {
+  display: none;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>List of Doctors</h2>
+<p>Click a doctor's name to see more info.
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
