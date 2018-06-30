@@ -1,5 +1,6 @@
 var http = require('http');
 var fs = require('fs');
+var port = process.env.PORT || 8080;
 
 var doctors = [
 	{name:"Dr. Michael", specialty:"Pediatrics", rating:84},
@@ -38,4 +39,4 @@ http.createServer(function (req, res) {
 	  	res.write("</tbody></table></body></html>");
 	    res.end();
   });
-}).listen(8080);
+}).listen(port);
