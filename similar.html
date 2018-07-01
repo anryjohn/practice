@@ -3,19 +3,6 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-$(document).ready(function(){
-  $('#myInput').on('keyup', function() {
-    var value = $(this).val().toLowerCase();
-    $('#myTable tr').filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
-</script>
-
-
-
 <style>
 table {
     font-family: arial, sans-serif;
@@ -39,6 +26,4 @@ td, th {
 <body>
 
 <h2>List of Doctors</h2>
-<p>Click a doctor's name to see more info.
-<input id="myInput" type="text" placeholder="Search..">
-<br><br>
+<p>Click a doctor's name to see more info, along with similar doctors.</p>
