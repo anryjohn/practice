@@ -1,3 +1,11 @@
+
+/*
+Given the constraints of the problem, this is what I came up with. This uses node.js to generate the web application and utilizes jQuery to 
+perform the text-hiding/dropdown functionality. Given more time, I'd have liked to include a searching utility, perhaps include some kind of
+google maps api functionality so as to indentify similar doctors not by a string literal of location, but by a location radius. Additionally, I'd have 
+liked to spruce up the site with so more css, bootstrap, etc.
+*/
+
 var http = require('http');
 var fs = require('fs');
 // listens for heroku port or 8080
@@ -14,6 +22,9 @@ var doctors = [
 	{name:"Dr. Phyllis", specialty:"Orthopedist", area:"Scranton", rating:99},
 	{name:"Dr. Oscar", specialty: "Dermatologist", area:"Scranton", rating:87},
 	{name:"Dr. Kevin", specialty:"Family Medicine", area:"Scranton", rating:100},
+	{name:"Dr. Ryan", specialty:"Dentist", area:"New York", rating:42},
+	{name:"Dr. Kelly", specialty:"Dentist", area:"Scranton", rating:90},
+	{name:"Dr. Jan", specialty:"Dentist", area:"New York", rating:35},
 	{name:"Dr. Toby", specialty:"Orthopedist", area:"Costa Rica", rating:50},
 ];
 
